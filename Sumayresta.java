@@ -25,9 +25,18 @@ public class Sumayresta {
         System.out.println("1. Suma");
         System.out.println("2. Resta");
 
-        
+        int opcion = scanner.nextInt();
+        double resultado = 0;
 
-        
+        if (opcion == 1) {
+            resultado = num1 + num2;
+        } else if (opcion == 2) {
+            resultado = num1 - num2;
+        } else {
+            System.out.println("Opción no válida");
+            scanner.close();
+            return;
+        }
 
         
     }
